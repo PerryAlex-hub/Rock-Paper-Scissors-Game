@@ -22,13 +22,13 @@ function calc(yourMove) {
 
   
 if (moves >= 0 && moves < 1/3) {
-  computerMove = 'Rock'
+  computerMove = 'rock'
 }
 else if(moves >= 1/3  && moves < 2/3) {
-  computerMove = 'Paper'
+  computerMove = 'paper'
 }
 else if(moves >= 2/3 && moves <= 1) {
-  computerMove = 'Scissors'
+  computerMove = 'scissors'
 }
 
 
@@ -36,25 +36,25 @@ else if(moves >= 2/3 && moves <= 1) {
 
 // Result if you picked Rock 
 
-if (yourMove === 'rock' && computerMove === 'Rock') {
+if (yourMove === 'rock' && computerMove === 'rock') {
   result = 'Tie!'
 }
-else if (yourMove === 'rock' && computerMove === 'Scissors') {
+else if (yourMove === 'rock' && computerMove === 'scissors') {
   result = 'You win!'
 }
-else if (yourMove === 'rock' && computerMove === 'Paper') {
+else if (yourMove === 'rock' && computerMove === 'paper') {
   result = 'You lose!'
 }
 
 // Result if you picked Scissors
 
-if (yourMove === 'scissors' && computerMove === 'Rock') {
+if (yourMove === 'scissors' && computerMove === 'rock') {
   result = 'You lose!'
 }
-else if (yourMove === 'scissors' && computerMove === 'Paper') {
+else if (yourMove === 'scissors' && computerMove === 'paper') {
   result = 'You win!'
 }
-else if (yourMove === 'scissors' && computerMove === 'Scissors') {
+else if (yourMove === 'scissors' && computerMove === 'scissors') {
   result = 'Tie!'
 }
 
@@ -62,13 +62,13 @@ else if (yourMove === 'scissors' && computerMove === 'Scissors') {
 // Result if you picked Paper
 
 
-if (yourMove === 'paper' && computerMove === 'Paper') {
+if (yourMove === 'paper' && computerMove === 'paper') {
   result = 'Tie!'
 }
-else if (yourMove === 'paper' && computerMove === 'Rock') {
+else if (yourMove === 'paper' && computerMove === 'rock') {
   result = 'You win!'
 }
-else if (yourMove === 'paper' && computerMove === 'Scissors') {
+else if (yourMove === 'paper' && computerMove === 'scissors') {
   result = 'You lose!'
 }
 
