@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+   <!-----------   Header   ---------->
+  <p class="style-header">
+    Rock Paper Scissors 
+  </p>
+
+
+  <!-----------   Rock-Button   ---------->
+
+  <button class="move-button" onclick="
+
+    calc('Rock')
+  
+  ">
+
+    <img class="move-icon" src="images/rock-emoji.png" alt="Rock">
+
+  </button>
+
+
+  <!-----------   Paper-Button   ---------->
+
+  <button class="move-button" onclick="
+
+    calc('Paper')
+    
+  ">
+
+    <img class="move-icon" class="move-icon" src="images/paper-emoji.png" alt="Paper">
+ 
+  </button>
+
+  <!-----------   Scissors-Button   ---------->
+
+  <button class="move-button" onclick="
+
+    calc('Scissors')
+ 
+  ">
+
+    <img class="move-icon" src="images/scissors-emoji.png" alt="">
+
+  </button>
+
+
+  <!-----------   Display   ---------->
+
+  <p class="result style-result"></p>
+
+  <p class="move style-move">
+   
+  </p>
+
+  <p class="score style-score"></p>
+
+  <!-----------   Reset-Score-Button   ---------->
+
+  
+  <button class="style-reset-btn" onclick="
+
+    score.wins = 0
+    score.losses = 0
+    score.ties = 0
+    localStorage.removeItem('score')
+
+    updateScore()
+  ">
+    Reset Score
+  </button>
+
+
+  <script src="game.js"> </script>
+
+</body>
+</html>
