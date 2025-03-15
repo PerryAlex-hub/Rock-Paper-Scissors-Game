@@ -36,25 +36,25 @@ else if(moves >= 2/3 && moves <= 1) {
 
 // Result if you picked Rock 
 
-if (yourMove === 'Rock' && computerMove === 'Rock') {
+if (yourMove === 'rock' && computerMove === 'Rock') {
   result = 'Tie!'
 }
-else if (yourMove === 'Rock' && computerMove === 'Scissors') {
+else if (yourMove === 'rock' && computerMove === 'Scissors') {
   result = 'You win!'
 }
-else if (yourMove === 'Rock' && computerMove === 'Paper') {
+else if (yourMove === 'rock' && computerMove === 'Paper') {
   result = 'You lose!'
 }
 
 // Result if you picked Scissors
 
-if (yourMove === 'Scissors' && computerMove === 'Rock') {
+if (yourMove === 'scissors' && computerMove === 'Rock') {
   result = 'You lose!'
 }
-else if (yourMove === 'Scissors' && computerMove === 'Paper') {
+else if (yourMove === 'scissors' && computerMove === 'Paper') {
   result = 'You win!'
 }
-else if (yourMove === 'Scissors' && computerMove === 'Scissors') {
+else if (yourMove === 'scissors' && computerMove === 'Scissors') {
   result = 'Tie!'
 }
 
@@ -62,13 +62,13 @@ else if (yourMove === 'Scissors' && computerMove === 'Scissors') {
 // Result if you picked Paper
 
 
-if (yourMove === 'Paper' && computerMove === 'Paper') {
+if (yourMove === 'paper' && computerMove === 'Paper') {
   result = 'Tie!'
 }
-else if (yourMove === 'Paper' && computerMove === 'Rock') {
+else if (yourMove === 'paper' && computerMove === 'Rock') {
   result = 'You win!'
 }
-else if (yourMove === 'Paper' && computerMove === 'Scissors') {
+else if (yourMove === 'paper' && computerMove === 'Scissors') {
   result = 'You lose!'
 }
 
